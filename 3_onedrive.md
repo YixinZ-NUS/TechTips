@@ -8,6 +8,7 @@ win11 22557后 在:右键菜单(未同步文件夹)
 
 >https://blogs.windows.com/windowsdeveloper/2016/12/02/symlinks-windows-10/
 >>How to use Symlinks
+
 Symlinks are created either using the mklink command or the CreateSymbolicLink API
 
 mklink
