@@ -1,4 +1,5 @@
 #1.mklink创建软链接实现onedrive云同步#
+>https://schinagl.priv.at/nt/hardlinkshellext/hardlinkshellext.html#symboliclinks
 #2.webdav实现#
 以下疑似失效:
 >先用浏览器登录访问 http://onedrive.com
