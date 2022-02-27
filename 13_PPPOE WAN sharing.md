@@ -1,0 +1,7 @@
+# PPPOE WAN internet sharing as wifi hotspot
+>https://answers.microsoft.com/en-us/windows/forum/all/pppoe-wan-internet-sharing-as-wifi-hotspot/b476f734-df55-4e03-a2bd-79c87d2670d6
+Not knowing the reason that you've created a software PPPOE connection (direct connection to a modem?) instead of using the Ethernet connection directly but some sort of incompatibility with the Windows hotspot/internet connection sharing services does seem to be the issue. Lack of DHCP LAN addressing and/or NAT services could be part of the problem. Your internet connection would have WAN=>PC1 internet addressing but not necessarily PC1<=>PC2(etc) LAN addressing and/or the NAT (network address translation) capabilities for WiFi connected computers to pass through your WAN connection.
+
+All of those functions would typically be provided by hardware in either a router or a modem with routing capability. Or by software installed for the same purpose.  If you are connecting directly to a modem it might not have LAN routing services at all, or possibly if it does have them that facility might be turned off in the modem.
+
+A solution with the least headaches would be to connect an inexpensive router (or wifi router) to your WAN connection and share the internet connection using the DHCP and NAT services that the router provides.
